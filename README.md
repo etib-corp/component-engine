@@ -63,12 +63,13 @@ component_engine/
 
 - CMake (3.10 or higher)
 - A C++ compiler (GCC or Clang)
+- Python (3.6 or higher)
 
 ### Building the Project
 
 1. Clone the repository:
 
-   ```bash
+```bash
    git clone https://github.com/etib-corp/component_engine.git --recurse-submodules
    cd component_engine
    ```

@@ -57,13 +57,33 @@ component_engine/
 
 ---
 
-## Contributing
+## Building
 
-Contributions are welcome! Open an issue or submit a PR.
+### Prerequisites
 
-1. Fork the repository.
-2. Install dependencies: `pip install -e .`
-3. Run tests: `pytest`
+- CMake (3.10 or higher)
+- A C++ compiler (GCC or Clang)
+
+### Building the Project
+
+1. Clone the repository:
+
+   ```bash
+   git clone https://github.com/etib-corp/component_engine.git --recurse-submodules
+   cd component_engine
+   ```
+
+2. Configure the build
+
+   ```bash
+   cmake -S . -B build
+   ```
+
+3. Build the project:
+
+   ```bash
+   cmake --build build
+   ```
 
 ---
 

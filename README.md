@@ -7,6 +7,7 @@
 Component Engine is a lightweight, high-performance library for building user interfaces in Python. It brings the **component-based architecture** and **reactive updates** of React to Python, but replaces JSX/TSX with Pythonic syntax and leverages a **C++ core** for performance-critical operations.
 
 ### Key Features
+
 - **Declarative UI**: Define your UI as a hierarchy of reusable components.
 - **Reactive Updates**: Efficiently update the DOM (or equivalent) in response to state changes.
 - **Pythonic Syntax**: No JSX/TSX—use pure Python to describe your components.
@@ -24,57 +25,34 @@ Component Engine is a lightweight, high-performance library for building user in
 
 ---
 
-## Installation
-
-```bash
-pip install component-engine
-```
-
-*(Note: Ensure you have Python 3.8+ and a compatible C++ compiler.)*
-
----
-
-## Quick Example
-
-```python
-from component_engine import Component, render, html
-
-class Greeting(Component):
-    def render(self):
-        return html.div(
-            html.h1(f"Hello, {self.props['name']}!")
-        )
-
-# Render to a target (e.g., a web view or desktop window)
-render(Greeting(name="World"), target="window")
-```
-
----
-
 ## Core Concepts
 
 ### 1. **Components**
+
 Define UI pieces as Python classes. Each component manages its own state and lifecycle.
 
 ### 2. **Virtual DOM**
+
 The C++ core handles efficient diffing and rendering, similar to React’s reconciliation.
 
 ### 3. **State Management**
+
 Use hooks or class-based state to manage dynamic data.
 
 ### 4. **Event Handling**
+
 Attach Python callbacks to user interactions.
 
 ---
 
 ## Project Structure
 
-```
+```plain
 component_engine/
-├── core/          # C++ core (rendering, diffing)
-├── python/        # Python bindings and public API
-├── examples/      # Demo applications
-└── tests/         # Unit and integration tests
+├── core/               # C++ core (rendering, diffing)
+├── component_engine/   # Python bindings and public API
+├── examples/           # Demo applications
+└── tests/              # Unit and integration tests
 ```
 
 ---

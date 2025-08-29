@@ -6,6 +6,6 @@ A declarative UI component engine for Python, inspired by React but built with a
 __version__ = "0.1.0"
 
 from .component import Component
-from .component_properties import ComponentProperties
+from .properties import Properties
 
-__all__ = ["Component", "ComponentProperties"]
+__all__ = ["Component", "Properties"]

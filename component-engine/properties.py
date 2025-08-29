@@ -1,7 +1,7 @@
 from typing import Dict, Optional
 
 
-class ComponentProperties:
+class Properties:
     """
     Class to manage properties for a UI component.
     """

@@ -10,6 +10,8 @@
 #include <stdexcept>
 #include <typeinfo>
 #include <type_traits>
+#include <algorithm>
+#include <cctype>
 
 namespace argument_parser
 {

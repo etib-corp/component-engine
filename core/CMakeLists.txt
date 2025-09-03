@@ -7,4 +7,7 @@ include_directories(${HEADERS_DIR})
 
 add_library(core STATIC ${SOURCES})
 
+target_link_libraries(core PRIVATE ${Python_LIBRARIES})
+
 target_include_directories(core PUBLIC ${HEADERS_DIR})
+target_include_directories(core PRIVATE ${Python_INCLUDE_DIRS})
